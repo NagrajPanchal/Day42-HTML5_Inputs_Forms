@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width">
+        <title>Basic input types</title>
+<link rel="icon" href="C:\Users\user\Desktop\bridgelabz\JavaScript\Day42HTML5_Inputs_Forms\BL_logo_square_jpg.jpg" type="image/icon type">
+<link rel="stylesheet" href="C:\Users\user\Desktop\bridgelabz\JavaScript\Day42HTML5_Inputs_Forms\InputsForms.css">
+    </head>
+<body>
+    <form>
+        <header><h1>HTML5 Form Inputs Fields</h1></header>
+        <div>
+            <label for="text">text input type for name : </label>
+            <input type="text" id = "text" name="comboBoxField" placeholder="Enter name" pattern = "^[A-Z]{1}[a-z]{2,}$" autofocus required>
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+        <div>
+            <label for="pwd">password input type : </label>
+            <input type="password" id = "pwd" name="pwd" placeholder="Enter password" required>
+        </div>
+        <div>
+            <label for="email">email input type : </label>
+            <input type="email" id = "email" name="email" placeholder="E-Mail" required>
+        </div>
+        <div>
+            <label for="number">number input type : </label>
+            <input type="number" id = "number" name="number" placeholder="Number">
+        </div>
+        <div>
+            <label for="tel">tel input type : </label>
+            <input type="tel" id = "tel" name="tel" placeholder="tel">
+        </div>
+        <div>
+            <label for="search">search input type : </label>
+            <input type="search" id = "search" name="search" placeholder="Search">
+        </div>
+        <div class="nativeDateTimePicker">
+            <label for="party">Choose date and time : </label>
+            <input type="datetime-local" id = "party" name="bday">
+            <span class="validity"></span>
+        </div>
+        <div>
+            <label for="salary">Choose your salary : </label>
+            <input type="range" id = "salary" name="salary"
+            min="300000" max="500000" value="400000" step="100">
+            <output class="salary-output" for="salary">400000</output>
+        </div>
+        <div onclick="myFunction()">
+            <button>Submit</button>
+        </div>        
+    </form>
+    <script src="C:\Users\user\Desktop\bridgelabz\JavaScript\Day42HTML5_Inputs_Forms\InputsForms.js">        
+    </script>
+</body>
+</html>
